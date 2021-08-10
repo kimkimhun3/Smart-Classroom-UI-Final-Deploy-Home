@@ -257,7 +257,7 @@ export default {
     streamingUser: "",
     streamBy: "",
     userCurrentStream: "",
-    thumbnailURL: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+    thumbnailURL: "https://raw.githubusercontent.com/kimkimhun3/Smart-Classroom-Thumbnails/main/Smart-Classroom-2.jpg",
     maxSize: 2048,
     errorDialog: false,
     dialog: false
