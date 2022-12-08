@@ -128,6 +128,7 @@ export default {
   methods: {
     async login() {
       this.loading = true;
+      console.log(process.env.VUE_APP_SERVER)
       if (this.valid) {
         const log = await backend.login(this.username, this.password);
         this.message = log;
@@ -135,6 +136,7 @@ export default {
       // else if(!this.valid){
       //   this.message = this.message
       // } 
+
       
       
       else {

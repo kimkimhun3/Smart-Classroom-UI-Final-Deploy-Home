@@ -1,6 +1,5 @@
 import axios from "axios";
 import cookie from "./cookie";
-
 const SERVER = process.env.VUE_APP_SERVER;
 const CHAT_SERVER = process.env.VUE_APP_CHAT_SERVER;
 
@@ -263,8 +262,8 @@ class Service {
     const chat = await axios.post(`${CHAT_SERVER}getChat`, {
       roomId
     });
+    console.log('=======>', chat);
     if (chat.data != undefined) {
-      console.log(chat);
       return {
         chats: chat.data.chats,
         questions: chat.data.questions,
