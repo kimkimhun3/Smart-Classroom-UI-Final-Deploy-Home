@@ -2,6 +2,7 @@ version: '3.8'
 
 networks:
   smart-class-room:
+    driver: bridge
     name: smart-class-room-networks
     external: true
 

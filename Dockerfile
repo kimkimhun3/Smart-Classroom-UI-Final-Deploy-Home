@@ -3,7 +3,7 @@
                 # BUILD STAGE #
 # /* ========================================= */
 
-FROM node:latest as build-stage 
+FROM node:14.17-alpine as build-stage 
 
 WORKDIR /app
 
