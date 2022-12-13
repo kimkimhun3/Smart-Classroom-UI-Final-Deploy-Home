@@ -1,0 +1,20 @@
+version: '3.8'
+
+networks:
+  smart-class-room:
+    driver: bridge
+    name: smart-class-room-networks
+    external: true
+
+services:
+  client:
+    image: client
+    container_name: smart-class-room-client
+    env_file:
+      - .env.production
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - smart-class-room
+    restart: always

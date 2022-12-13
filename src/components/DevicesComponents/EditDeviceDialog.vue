@@ -27,7 +27,6 @@
 
 <script>
 import io from "socket.io-client";
-
 const DEVICE_SERVER = process.env.VUE_APP_DEVICE_SERVER;
 
 export default {
