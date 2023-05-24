@@ -1,7 +1,8 @@
 import axios from "axios";
 import cookie from "./cookie";
 
-const SERVER = process.env.VUE_APP_SERVER;
+
+const SERVER = 'https://smart-classroom-api.kit-edu-kh.com/';
 const CHAT_SERVER = process.env.VUE_APP_CHAT_SERVER;
 
 class Service {

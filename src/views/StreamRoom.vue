@@ -19,13 +19,13 @@
 			</tr>
   </v-simple-table> -->
   <v-card class="mx-2 transparent" flat id="streamRoom">
-    <v-row>
-      <v-col cols="9">
+    <v-row >
+      <v-col cols="12" >
         <StreamBox />
       </v-col>
-      <v-col cols="3">
+      <!-- <v-col cols="3">
         <ChatBox :user="user" />
-      </v-col>
+      </v-col> -->
     </v-row>
 
   </v-card>
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import ChatBox from "../components/StreamComponents/ChatBox";
+// import ChatBox from "../components/StreamComponents/ChatBox";
 import StreamBox from "../components/StreamComponents/StreamBox";
 // import BlankLayout from "../layouts/Blank";
 
@@ -51,7 +51,7 @@ export default {
   components: {
     
     StreamBox,
-    ChatBox
+    // ChatBox
   },
   
   props: {

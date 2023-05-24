@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  client:
+    image: client
+    container_name: smart-class-room-client
+    env_file:
+      - .env.production
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 8000:80
+    networks:
+      - smart-class-room
+    restart: always
+
+networks:
+  smart-class-room:
+    name: smart-class-room-networks
+    external: true
