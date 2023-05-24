@@ -264,8 +264,8 @@ class Service {
     const chat = await axios.post(`${CHAT_SERVER}getChat`, {
       roomId
     });
+    console.log('=======>', chat);
     if (chat.data != undefined) {
-      console.log(chat);
       return {
         chats: chat.data.chats,
         questions: chat.data.questions,
